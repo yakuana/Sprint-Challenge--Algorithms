@@ -16,4 +16,12 @@ c) 0(n)
 
 ## Exercise II
 
+The goal is to find the highest floor from which the egg will not break with the fewest number of drops and breaks possible. Since the floors are sorted, binary search would be a plausible solution.
 
+1. Drop an egg from the middle floor.
+2. If it breaks, move to the lower half's middle floor and repeat
+3. Else move to the higher half's middle floor and repeat.
+
+Repeat steps 1-3 until we've found the highest floor on which the egg doesn't break. We'll know when we've reached it because the number of floors is finite. 
+
+The runtime complexity for this algorithm is O(log n), because each loop reduces the search space by half.
