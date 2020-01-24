@@ -11,3 +11,4 @@ def count_th(word):
     
     return count_th(word[word.find('th') + 2:]) + 1
 
+print("this could be the start of something new")
