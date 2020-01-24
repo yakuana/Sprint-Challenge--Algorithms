@@ -6,9 +6,10 @@ Your function must utilize recursion. It cannot contain any loops.
 def count_th(word):
     
     # TBC
-    if (word.find('th') == -1):
+    if len(word) <= 1:
         return 0
-    
-    return count_th(word[word.find('th') + 2:]) + 1
+    elif (word[0] + word[1]) == 'th':
+        return count_th(word[2:]) + 1 
+    return count_th(word[1:])
 
-print("this could be the start of something new")
+print(count("this could be the start of something new"))

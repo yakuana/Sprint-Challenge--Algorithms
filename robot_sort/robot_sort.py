@@ -112,7 +112,7 @@ class SortingRobot:
                 self.swap_item() 
                 self.move_right() 
 
-                # if the item is greater than the previous item, swap them and turn the light on 
+                # if the item is greater than the next item, swap them and turn the light on 
                 if self.compare_item() == 1:
                     self.swap_item()
                     self.set_light_on() 
